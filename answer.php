@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area of Triangle,in PHP" />
+  <meta name="description" content="Volume of right triangular prism,in PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="domenic dangelo" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
-  <title>Area of Triangle,in PHP</title>
+  <title>Volume of right triangular prism, in PHP</title>
 </head>
 
 <body>
@@ -24,24 +24,25 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area of Triangle,in PHP</span>
+        <span class="mdl-layout-title">Volume of right triangular prism, in PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/area_of_trinagle.png" alt="triangle" />
+        <img src="./images/volume_of_right_triangular_prism.png" alt="volume of right triangular prism" />
       </div>
       <div class="page-content-php">
         <div id="user-info">
           <?php
-          $baseOfTriangle = $_GET["base-of-triangle"];
-          $heightOfTriangle = $_GET["height-of-triangle"];
+          $baseOfRightTriangularPrism = $_GET["base-of-right-triangular-prism"];
+          $heightOfRightTriangularPrism = $_GET["height-of-right-triangular-prism"];
+          $lengthOfRightTriangularPrism = $_GET["length-of-right-triangular-prism"];
           // process
-          $area = $baseOfTriangle * $heightOfTriangle / 2;
+          $volume = $baseOfRightTriangularPrism * $heightOfRightTriangularPrism * $lengthOfRightTriangularPrism / 2;
           // output
-          echo "If a triangle has base = " . $baseOfTriangle . " cm and the width = " . $heightOfTriangle . " cm:";
+          echo "If a right triangular prism has base = " . $baseOfRightTriangularPrism . " cm, a height = " . $heightOfRightTriangularPrism . " cm and a length = " . $lengthOfRightTriangularPrism . " cm:";
           echo "<br />";
-          echo "The area of the rectangle is " . $area . " cm².";
+          echo "The volume of the right triangular prism is " . $volume . " cm³.";
           ?>
         </div>
       </div>
