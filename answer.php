@@ -37,14 +37,20 @@
           $baseOfRightTriangularPrism = $_GET["base-of-right-triangular-prism"];
           $heightOfRightTriangularPrism = $_GET["height-of-right-triangular-prism"];
           $lengthOfRightTriangularPrism = $_GET["length-of-right-triangular-prism"];
+
           // process
           $volume = $baseOfRightTriangularPrism * $heightOfRightTriangularPrism * $lengthOfRightTriangularPrism / 2;
+
           // output
+          echo "If a right triangular prism has base = " . $baseOfRightTriangularPrism . " cm and the height = " . $heightOfRightTriangularPrism .
+            " cm an the length = " . $lengthOfRightTriangularPrism . " cm:";
           echo "<br />";
           echo "The volume of the right triangular prism is " . $volume . " cm³.";
           ?>
+          <div class="page-content-answer">
+            <a href="./index.php">Return</a>
+          </div>
         </div>
-      </div>
     </main>
   </div>
 </body>
