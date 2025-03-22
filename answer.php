@@ -40,7 +40,7 @@
           // process
           $volume = ($baseOfRightTriangularPrism * $heightOfRightTriangularPrism / 2) * $lengthOfRightTriangularPrism;
           // output
-          echo "If a right triangular prism has base = " . $baseOfRightTriangularPrism . " cm and the height = " . $heightOfRightTriangularPrism . " cm an the length = " . $lengthOfRightTriangularPrism . " cm:";
+          echo "If a right triangular prism has base = " . $baseOfRightTriangularPrism . " cm and the height = " . $heightOfRightTriangularPrism . " cm and the length = " . $lengthOfRightTriangularPrism . " cm:";
           echo "<br />";
           echo "The volume of the right triangular prism is " . $volume . " cm³.";
           }
