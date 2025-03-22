@@ -20,7 +20,6 @@
 
 <body>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script src="./js/script.js"></script>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
@@ -29,17 +28,17 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/volume_of_right_triangular_prism.png" alt="volume of right triangular prism" />
+        <img src="./images/volume-of-a-right-triangular-prism.png" alt="volume of right triangular prism" />
       </div>
       <div class="page-content-php">
         <div id="user-info">
           <?php
-          $baseOfRightTriangularPrism = $_GET["base-of-right-triangular-prism"];
-          $heightOfRightTriangularPrism = $_GET["height-of-right-triangular-prism"];
-          $lengthOfRightTriangularPrism = $_GET["length-of-right-triangular-prism"];
+          $baseOfRightTriangularPrism = $_GET["baseofrighttriangularprism"];
+          $heightOfRightTriangularPrism = $_GET["heightofrighttriangularprism"];
+          $lengthOfRightTriangularPrism = $_GET["lengthofrighttriangularprism"];
 
           // process
-          $volume = $baseOfRightTriangularPrism * $heightOfRightTriangularPrism * $lengthOfRightTriangularPrism / 2;
+          $volume = $baseOfRightTriangularPrism * $heightOfRightTriangularPrism / 2 * $lengthOfRightTriangularPrism;
 
           // output
           echo "If a right triangular prism has base = " . $baseOfRightTriangularPrism . " cm and the height = " . $heightOfRightTriangularPrism . " cm an the length = " . $lengthOfRightTriangularPrism . " cm:";
