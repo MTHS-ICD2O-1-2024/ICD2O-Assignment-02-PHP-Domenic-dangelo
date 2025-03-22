@@ -28,7 +28,7 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/volume-of-a-right-triangular-prism.png" alt="volume of right triangular prism" />
+        <img src="./images/volume_of_right_triangular_prism.png" alt="volume of right triangular prism" />
       </div>
       <div class="page-content-php">
         <div id="user-info">
