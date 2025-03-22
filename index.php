@@ -28,28 +28,25 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/volume-of-a-right-triangular-prism.png" alt="volume of right triangular prism" />
+        <img src="./images/volume-of-right-triangular-prism.png" alt="volume of right triangular prism" />
       </div>
       <div class="page-content-php">Enter the base, height and length in cm.
         <form action="answer.php" method="GET">
-          <p>Base of right triangular prism</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="baseofrighttriangularprism">
-            <label class="mdl-textfield__label" for="baseofrighttriangularprism">Base of right triangular prism (cm)</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="base-of-right-triangular-prism" name="base-of-right-triangular-prism">
+            <label class="mdl-textfield__label" for="base-of-right-triangular-prism">Base of right triangular prism (cm)</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />
-          <p>Height of right triangular prism</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="heightofrighttriangularprism">
-            <label class="mdl-textfield__label" for="heightofrighttriangularprism">Height of right triangular prism (cm)</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height-of-right-triangular-prism" name="height-of-right-triangular-prism">
+            <label class="mdl-textfield__label" for="height-of-right-triangular-prism">Height of right triangular prism (cm)</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />
-          <p>Length of right triangular prism</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="lengthofrighttriangularprism">
-            <label class="mdl-textfield__label" for="lengthofrighttriangularprism">length of right triangular prism (cm)</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length-of-right-triangular-prism" name="length-of-right-triangular-prism">
+            <label class="mdl-textfield__label" for="length-of-right-triangular-prism">length of right triangular prism (cm)</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
           <br />

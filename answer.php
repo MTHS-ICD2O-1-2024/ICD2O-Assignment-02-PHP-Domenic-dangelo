@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ICS2O-Unit2-04-HTML-MDL -->
+<!-- ICS2O-Unit2-assignment2-HTML-MDL -->
 <html lang="en-ca">
 
 <head>
@@ -33,17 +33,17 @@
       <div class="page-content-php">
         <div id="user-info">
           <?php
-          $baseOfRightTriangularPrism = $_GET["baseofrighttriangularprism"];
-          $heightOfRightTriangularPrism = $_GET["heightofrighttriangularprism"];
-          $lengthOfRightTriangularPrism = $_GET["lengthofrighttriangularprism"];
-
+          if (isset($_GET["base-of-right-triangular-prism"]) && isset($_GET["height-of-right-triangular-prism"]) && isset($_GET["length-of-right-triangular-prism"])) {
+          $baseOfRightTriangularPrism = $_GET["base-of-right-triangular-prism"];
+          $heightOfRightTriangularPrism = $_GET["height-of-right-triangular-prism"];
+          $lengthOfRightTriangularPrism = $_GET["length-of-right-triangular-prism"];
           // process
-          $volume = $baseOfRightTriangularPrism * $heightOfRightTriangularPrism / 2 * $lengthOfRightTriangularPrism;
-
+          $volume = ($baseOfRightTriangularPrism * $heightOfRightTriangularPrism / 2) * $lengthOfRightTriangularPrism;
           // output
           echo "If a right triangular prism has base = " . $baseOfRightTriangularPrism . " cm and the height = " . $heightOfRightTriangularPrism . " cm an the length = " . $lengthOfRightTriangularPrism . " cm:";
           echo "<br />";
           echo "The volume of the right triangular prism is " . $volume . " cm³.";
+          }
           ?>
           <div class="page-content-answer">
             <a href="./index.php">Return</a>
